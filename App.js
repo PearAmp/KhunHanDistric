@@ -5,6 +5,7 @@ import AllnewsScreen from './screen/AllnewsScreen';
 // import Bottom from './components/Bottom';
 import SearchScreen from './screen/SearchScreen';
 import MediaScreen from './screen/MediaScreen'
+import InstagramScreen from './screen/InstagramScreen';
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
         {/* <AllnewsScreen /> */}
         {/* <SearchScreen /> */}
         {/* <Bottom /> */}
-        <MediaScreen />
+        {/* <MediaScreen /> */}
+        <InstagramScreen />
       </View>
     </ScrollView>
   );
