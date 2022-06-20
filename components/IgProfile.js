@@ -12,30 +12,67 @@ export default function IgProfile() {
               style={styles.profileimage}
             />
           </View>
-          <View style={styles.textTitle}>
-          <View style={styles.textTitl1}>
-          <Text>2,230</Text>
-          <Text>โพสต์</Text>
 
-          </View>
-          <View style={styles.textTitle2}>
-          <Text>1.635</Text>
-          <Text>ผู้ติดตาม</Text>
+          {/* text */}
 
-          </View>
+          <View
+            style={{
+              marginLeft: 50,
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
+            <View style={{marginRight: 30}}>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                  color: '#000',
+                }}>
+                2,230
+              </Text>
+              <Text style={{textAlign: 'center', color: '#000'}}>โพสต์</Text>
+            </View>
 
-          <View style={styles.textTitle3}>
-          <Text>1,170</Text>
-          <Text>กำลังติดตาม</Text>
+            <View style={{marginRight: 30}}>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                  color: '#000',
+                }}>
+                1,635
+              </Text>
+              <Text style={{textAlign: 'center', color: '#000'}}>
+                ผู้ติดตาม
+              </Text>
+            </View>
 
-          </View>
-
-
+            <View>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                  color: '#000',
+                }}>
+                1,170
+              </Text>
+              <Text style={{textAlign: 'center', color: '#000'}}>
+                กำลังติดตาม
+              </Text>
+            </View>
           </View>
         </View>
 
         <View style={styles.borderText}>
           <Text style={styles.textleft}>+ ตั้งสถานะ</Text>
+        </View>
+        <View style={{marginTop: 10}}>
+          <Text style={{fontSize: 12, color: '#000'}}>
+            So I want to happy again
+          </Text>
         </View>
       </View>
     </SafeAreaView>
@@ -49,34 +86,23 @@ const styles = StyleSheet.create({
   },
   content: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   profileimage: {
-    width: 80,
-    height: 80,
+    width: 70,
+    height: 70,
     borderRadius: 50,
   },
   borderText: {
     backgroundColor: '#eee',
-    width: 100,
+    width: 80,
     borderRadius: 30,
+    marginTop: 20,
   },
   textleft: {
     textAlign: 'center',
     paddingVertical: 5,
     fontSize: 12,
-  },
-  textTitle: {
-    flexDirection: 'row',
-    marginLeft: 50,
-  },
-  textTitle1: {
-    alignItems: 'center',
-  },
-  textTitle2: {
-    alignItems: 'center',
-  },
-  textTitle3: {
-    alignItems: 'center',
+    color: '#000',
   },
 });
